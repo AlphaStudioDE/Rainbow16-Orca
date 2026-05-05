@@ -259,6 +259,10 @@ public:
     // Vendor related handy functions
     bool is_bbl_vendor() { return get_current_vendor_type() == VendorType::Marlin_BBL; }
 
+    // Rainbow16: optional external material mapping helper.
+    // Placeholder only: keep default OrcaSlicer behavior until the feature flag is implemented.
+    bool use_rainbow16_filament_mapping() const;
+
     // Whether using bbl network for print upload
     bool use_bbl_network();
     // Whether using bbl's device tab
